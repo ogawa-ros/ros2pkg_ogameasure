@@ -21,7 +21,9 @@ setup(
     entry_points={
         'console_scripts': [
             'e8257d='+package_name+'.Agilent.E8257:main',
+            'pmx18_2a='+package_name+'.KIKUSUI.PMX18:main',
             'xffts='+package_name+'.RPG.xffts.main',
+
         ],
     },
 )
