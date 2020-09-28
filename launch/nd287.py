@@ -6,6 +6,10 @@ def generate_launch_description():
         Node(
             package='ros2pkg_ogameasure',
             node_executable='nd287',
+            parameters=[
+                {'~az_usbport': 'xxx'},
+                {'~el_usbport': 'xxx'}
+            ]
         )],
        )
-
+    
