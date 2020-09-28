@@ -44,7 +44,7 @@ def main(args=None):
     xffts = XFFTS()
     rclpy.spin(xffts.node)
 
-    sg.node.destroy_node()
+    xffts.node.destroy_node()
     rclpy.shutdown()
 
 
