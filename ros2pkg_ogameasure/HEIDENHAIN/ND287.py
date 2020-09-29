@@ -30,6 +30,11 @@ class ND287(object):
         self.pub_el = rclpy.node.create_publisher(Float64, topic_name_el, 1)
         self.az = self.get_az()
 
+        #ループ(スレッドの代わり)
+        self.timer_az = self.create_timer(0.01,self.publish_az)
+        self.timer_el = self.create_timer(0.01,self.publish_el)
+
+
 
     def get_az(self):
         _az = self.encorder_az.output_position_display_value()
@@ -40,17 +45,17 @@ class ND287(object):
         _el = self.encorder_el.output_position_display_value()
         el = float(_el.strip(b"\x02\x00\r\n").decode())
         return el
-
+    
+    
     def publish_el(self):
-        while not rclpy.is_shutdown():
+        if rclpy.is_shutdown():
             el = self.get_el()
             self.pub_el.publish(float(el))
-            time.sleep(0.01)
-            continue
+        
 
     def publish_az(self):
         count = 0
-        while not rclpy.is_shutdown():
+        if rclpy.is_shutdown():
             az = self.az
             az2  = self.get_az()
             hensa = az2-az
@@ -62,8 +67,7 @@ class ND287(object):
             self.pub_az.publish(float(azaz))
             #self.pub_az.publish(float(az2))
             self.az = az2
-            time.sleep(0.01)
-            continue
+
 
     def start_thread(self):
         th = threading.Thread(target = self.publish_az)
