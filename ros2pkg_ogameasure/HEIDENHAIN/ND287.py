@@ -13,7 +13,7 @@ class ND287(object):
     def __init__(self):
         self.node = rclpy.create_node(node_name)
 
-        self.node.declare_parameter("az_port") #いらない?
+        self.node.declare_parameter("az_port")
         self.node.declare_parameter("el_port")
         az_port = self.node.get_parameter("~az_usbport").get_parameter_value().string_value
         el_port = self.node.get_parameter("~el_usbport").get_parameter_value().string_value
