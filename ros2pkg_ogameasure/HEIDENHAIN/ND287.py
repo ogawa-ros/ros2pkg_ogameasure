@@ -26,8 +26,8 @@ class ND287(object):
         topic_name_el = '/dev/'+node_name+'/'+el_port+'/'
         topic_name_el = topic_name_el.replace('_','/').replace('.','_')
 
-        self.pub_az = rclpy.node.create_publisher(Float64, topic_name_az, 1)
-        self.pub_el = rclpy.node.create_publisher(Float64, topic_name_el, 1)
+        self.pub_az = self.node.create_publisher(Float64, topic_name_az, 1)
+        self.pub_el = self.node.create_publisher(Float64, topic_name_el, 1)
 #         self.az = self.get_az()
         self.az = self.get_az_simu()
 
