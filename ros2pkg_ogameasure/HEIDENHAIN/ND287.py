@@ -18,8 +18,8 @@ class ND287(object):
         az_port = self.node.get_parameter("~az_usbport").get_parameter_value().string_value
         el_port = self.node.get_parameter("~el_usbport").get_parameter_value().string_value
 
-        self.encorder_az = ogameasure.HEIDENHAIN.ND287(az_port)
-        self.encorder_el = ogameasure.HEIDENHAIN.ND287(el_port)
+#         self.encorder_az = ogameasure.HEIDENHAIN.ND287(az_port)
+#         self.encorder_el = ogameasure.HEIDENHAIN.ND287(el_port)
 
         topic_name_az = '/dev/'+node_name+'/'+az_port+'/'
         topic_name_az = topic_name_az.replace('_','/').replace('.','_')
@@ -59,14 +59,16 @@ class ND287(object):
 
     
     def publish_el(self):
-        el = self.get_el()
+#         el = self.get_el()
+         el = self.get_el_simu()
         self.pub_el.publish(float(el))
         
 
     def publish_az(self):
         count = 0
         az = self.az
-        az2  = self.get_az()
+#         az2  = self.get_az()
+        az2  = self.get_az_simu()
         hensa = az2-az
         if hensa > 100: #0->360
             count = count - 1
