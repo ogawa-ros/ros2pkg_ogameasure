@@ -28,7 +28,8 @@ class ND287(object):
 
         self.pub_az = rclpy.node.create_publisher(Float64, topic_name_az, 1)
         self.pub_el = rclpy.node.create_publisher(Float64, topic_name_el, 1)
-        self.az = self.get_az()
+#         self.az = self.get_az()
+        self.az = self.get_az_simu()
 
         #ループ(スレッドの代わり)
         self.node.create_timer(0.01,self.publish_az)
