@@ -69,14 +69,6 @@ class ND287(object):
             self.az = az2
 
 
-    def start_thread(self):
-        th = threading.Thread(target = self.publish_az)
-        th.setDaemon(True)
-        th.start()
-        check = threading.Thread(target = self.publish_el)
-        check.setDaemon(True)
-        check.start()
-
 
 def main(args=None):
     rclpy.init(args=args)
