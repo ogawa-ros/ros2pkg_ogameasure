@@ -5,7 +5,7 @@ import rclpy
 import ogameasure
 import time
 import sys
-import threading
+import random
 from std_msgs.msg import Float64
 from std_msgs.msg import String
 
@@ -45,7 +45,18 @@ class ND287(object):
         _el = self.encorder_el.output_position_display_value()
         el = float(_el.strip(b"\x02\x00\r\n").decode())
         return el
-    
+
+
+    def get_az_simu(self):
+        az = 180+random.random()
+        return az
+
+    def get_el_simu(self):
+        el = 45+random.random()
+        return el
+
+
+
     
     def publish_el(self):
         el = self.get_el()
