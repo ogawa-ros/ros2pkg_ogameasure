@@ -54,7 +54,6 @@ class ND287(object):
 
     def publish_az(self):
         count = 0
-        
         az = self.az
         az2  = self.get_az()
         hensa = az2-az
@@ -73,7 +72,6 @@ def main(args=None):
     rclpy.init(args=args)
     encorder  = ND287()
     rclpy.spin(encorder.node)
-
     encorder.node.destroy_node()
     rclpy.shutdown()
 
