@@ -21,9 +21,9 @@ class ND287(object):
 #         self.encorder_az = ogameasure.HEIDENHAIN.ND287(az_port)
 #         self.encorder_el = ogameasure.HEIDENHAIN.ND287(el_port)
 
-        topic_name_az = '/dev/'+node_name+'/'+az_port+'/'
+        topic_name_az = '/dev/'+node_name+'/'+az_port
         topic_name_az = topic_name_az.replace('_','/').replace('.','_')
-        topic_name_el = '/dev/'+node_name+'/'+el_port+'/'
+        topic_name_el = '/dev/'+node_name+'/'+el_port
         topic_name_el = topic_name_el.replace('_','/').replace('.','_')
 
         self.pub_az = self.node.create_publisher(Float64, topic_name_az, 1)
