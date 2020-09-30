@@ -77,7 +77,6 @@ class ND287(object):
             count = count + 1
         azaz = az2 + count*360
         self.pub_az.publish(float(azaz))
-        #self.pub_az.publish(float(az2))
         self.az = az2
 
 
