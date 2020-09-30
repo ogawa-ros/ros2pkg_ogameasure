@@ -31,8 +31,8 @@ class ND287(object):
         self.az = self.get_az()
 
         #ループ(スレッドの代わり)
-        self.timer_az = self.create_timer(0.01,self.publish_az)
-        self.timer_el = self.create_timer(0.01,self.publish_el)
+        self.node.create_timer(0.01,self.publish_az)
+        self.node.create_timer(0.01,self.publish_el)
 
 
 
