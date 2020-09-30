@@ -1,0 +1,6 @@
+[console_scripts]
+e8257d = ros2pkg_ogameasure.Agilent.E8257:main
+nd287 = ros2pkg_ogameasure.HEIDENHAIN.ND287:main
+pmx18_2a = ros2pkg_ogameasure.KIKUSUI.PMX18:main
+xffts = ros2pkg_ogameasure.RPG.xffts.main
+

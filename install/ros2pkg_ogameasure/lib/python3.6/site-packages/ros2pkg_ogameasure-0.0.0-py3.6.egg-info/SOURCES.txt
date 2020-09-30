@@ -1,0 +1,16 @@
+README.md
+package.xml
+setup.cfg
+setup.py
+/home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info/PKG-INFO
+/home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info/SOURCES.txt
+/home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info/dependency_links.txt
+/home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info/entry_points.txt
+/home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info/requires.txt
+/home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info/top_level.txt
+/home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info/zip-safe
+resource/ros2pkg_ogameasure
+ros2pkg_ogameasure/__init__.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

@@ -1,0 +1,37 @@
+[0.223s] Invoking command in '/home/telescopio/ros2/src/ros2pkg_ogamesure': HISTTIMEFORMAT=%Y-%m-%d %H:%M:%S PYTHONPATH=/home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure build --build-base /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/build install --prefix /home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure --record /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/install.log --single-version-externally-managed
+[0.415s] running egg_info
+[0.415s] creating /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info
+[0.416s] writing /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info/PKG-INFO
+[0.416s] writing dependency_links to /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info/dependency_links.txt
+[0.416s] writing entry points to /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info/entry_points.txt
+[0.416s] writing requirements to /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info/requires.txt
+[0.416s] writing top-level names to /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info/top_level.txt
+[0.416s] writing manifest file '/home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info/SOURCES.txt'
+[0.441s] reading manifest file '/home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info/SOURCES.txt'
+[0.442s] writing manifest file '/home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info/SOURCES.txt'
+[0.442s] running build
+[0.442s] running build_py
+[0.442s] creating /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/build
+[0.442s] creating /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/build/lib
+[0.442s] creating /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/build/lib/ros2pkg_ogameasure
+[0.442s] copying ros2pkg_ogameasure/__init__.py -> /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/build/lib/ros2pkg_ogameasure
+[0.442s] running install
+[0.442s] running install_lib
+[0.443s] creating /home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure/lib/python3.6/site-packages/ros2pkg_ogameasure
+[0.443s] copying /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/build/lib/ros2pkg_ogameasure/__init__.py -> /home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure/lib/python3.6/site-packages/ros2pkg_ogameasure
+[0.443s] byte-compiling /home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure/lib/python3.6/site-packages/ros2pkg_ogameasure/__init__.py to __init__.cpython-36.pyc
+[0.443s] running install_data
+[0.444s] creating /home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure/share/ament_index
+[0.444s] creating /home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure/share/ament_index/resource_index
+[0.444s] creating /home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure/share/ament_index/resource_index/packages
+[0.444s] copying resource/ros2pkg_ogameasure -> /home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure/share/ament_index/resource_index/packages
+[0.444s] copying package.xml -> /home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure/share/ros2pkg_ogameasure
+[0.444s] running install_egg_info
+[0.445s] Copying /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/ros2pkg_ogameasure.egg-info to /home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure/lib/python3.6/site-packages/ros2pkg_ogameasure-0.0.0-py3.6.egg-info
+[0.446s] running install_scripts
+[0.459s] Installing e8257d script to /home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure/lib/ros2pkg_ogameasure
+[0.460s] Installing nd287 script to /home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure/lib/ros2pkg_ogameasure
+[0.460s] Installing pmx18_2a script to /home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure/lib/ros2pkg_ogameasure
+[0.460s] Installing xffts script to /home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure/lib/ros2pkg_ogameasure
+[0.460s] writing list of installed files to '/home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/install.log'
+[0.474s] Invoked command in '/home/telescopio/ros2/src/ros2pkg_ogamesure' returned '0': HISTTIMEFORMAT=%Y-%m-%d %H:%M:%S PYTHONPATH=/home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure build --build-base /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/build install --prefix /home/telescopio/ros2/src/ros2pkg_ogamesure/install/ros2pkg_ogameasure --record /home/telescopio/ros2/src/ros2pkg_ogamesure/build/ros2pkg_ogameasure/install.log --single-version-externally-managed
