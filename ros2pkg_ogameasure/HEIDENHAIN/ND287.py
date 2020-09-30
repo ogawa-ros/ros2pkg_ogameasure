@@ -61,7 +61,7 @@ class ND287(object):
     
     def publish_el(self):
 #         el = self.get_el()
-         el = self.get_el_simu()
+        el = self.get_el_simu()
         self.pub_el.publish(float(el))
         
 
