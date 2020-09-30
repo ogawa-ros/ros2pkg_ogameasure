@@ -48,25 +48,24 @@ class ND287(object):
     
     
     def publish_el(self):
-        if rclpy.is_shutdown():
-            el = self.get_el()
-            self.pub_el.publish(float(el))
+        el = self.get_el()
+        self.pub_el.publish(float(el))
         
 
     def publish_az(self):
         count = 0
-        if rclpy.is_shutdown():
-            az = self.az
-            az2  = self.get_az()
-            hensa = az2-az
-            if hensa > 100: #0->360
-                count = count - 1
-            elif hensa < -100: #360->0
-                count = count + 1
-            azaz = az2 + count*360
-            self.pub_az.publish(float(azaz))
-            #self.pub_az.publish(float(az2))
-            self.az = az2
+        
+        az = self.az
+        az2  = self.get_az()
+        hensa = az2-az
+        if hensa > 100: #0->360
+            count = count - 1
+        elif hensa < -100: #360->0
+            count = count + 1
+        azaz = az2 + count*360
+        self.pub_az.publish(float(azaz))
+        #self.pub_az.publish(float(az2))
+        self.az = az2
 
 
 
